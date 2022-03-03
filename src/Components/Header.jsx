@@ -1,17 +1,24 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import H_Coder from '../../public/Assets/Images/H Logo.png'
 
 
+// const Recipe=document.querySelector(".recipe")
+// const Favorite=document.querySelector(".favorite")
+
 
 const Header = () => {
-const Recipe=document.querySelector(".recipe")
-const Favorite=document.querySelector(".favorite")
+  const [deg,setDeg]= useState(90)
+  useEffect(() => {
+      setInterval(()=>{
+          setDeg(pre=>pre+1)
+    },50)
+  }, [])
+  if (deg===360)
+    setDeg(0)
 
-// Recipe.addEventListener('click',()=>console.log("Recipe Added"))
-// Favorite.addEventListener('click',()=>console.log("Your Favorites"))
   return (
-    <nav className='header'>
-      <div className='navbar justify-content-between'>
+    <nav className='header' style={{backgroundImage: `linear-gradient(${deg}deg,rgb(255, 50, 25),rgb(75,190,170))`}}>
+      <div className='navbar'>
         <div className='logo d-flex align-items-center'>
           <img src={H_Coder} width={"50"} alt='H-Coder' /> 
           <span className='logo-text text-black px-3 fs-2'>F<span className='fs-5'>🍔🍕</span>dify</span>
