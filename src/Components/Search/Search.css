@@ -1,6 +1,10 @@
+*{
+    transition: 1.5s ease;
+}
 .search{
     width: 80vw;
-    margin: 30vh auto;
+    margin: auto;
+   
 }
 #search-inp, #search-btn{
     overflow: hidden;
