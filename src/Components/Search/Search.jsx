@@ -5,20 +5,19 @@ import FilterRecipe from '../Filter Recipe/FilterRecipe'
 function Search(){
 
     const [searchValue,setsearchValue]=useState("")
+    const [searchmargin,setmargin]=useState("30vh auto")
     useEffect(()=>{
       console.log("rec",searchValue);
+      searchValue ? (setmargin("auto"), document.querySelector(".footer").style.position="unset") : (setmargin("30vh auto"), document.querySelector(".footer").style.position="fixed");
     },[searchValue])
-    const changeMargin=(search)=>{
-      search.style.margin="auto"
-      return true
-    }
+    
     return (
       <div className='main'>
         <div className='container mt-4'>
-          <div className='search text-center'>
+          <div className='search text-center' style={{margin:searchmargin}}>
             <input type={"text"} id={"search-inp"} autoComplete={"off"} name={"q"}
-              placeholder={"Search Your Recipe..."} onKeyPress={(event)=>event.key==="Enter" && event.target.value &&changeMargin(event.target.parentElement) && setsearchValue(event.target.value)} />
-            <button id={"search-btn"} onClick={(e)=>e.target.parentElement.children[0].value && changeMargin(e.target.parentElement) && setsearchValue(e.target.parentElement.children[0].value)}> Search</button>
+              placeholder={"Search Your Recipe..."} onKeyPress={(event)=>event.key==="Enter" && setsearchValue(event.target.value)} />
+            <button id={"search-btn"} onClick={(e)=> setsearchValue(e.target.parentElement.children[0].value)}> Search</button>
           </div>
         </div>
         {/* Calling: FilterRecipe Component */}

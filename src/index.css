@@ -66,6 +66,7 @@ body{
   font-size: 2vw;
   padding: 0.5vh;
   min-height: 5.5vh;
-  /* position: fixed; */
+  position: fixed;
+  bottom: 0;
   width: 100%;
 }

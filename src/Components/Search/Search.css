@@ -2,8 +2,8 @@
     transition: 1.5s ease;
 }
 .search{
-    width: 80vw;
-    margin: auto;
+    /* width: 80vw; */
+    margin: 30vh auto;
    
 }
 #search-inp, #search-btn{

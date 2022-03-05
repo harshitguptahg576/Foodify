@@ -13,6 +13,7 @@
     background-color: rgba(200, 50, 25, 0.5);
 }
 .recipe-review{
+    position:relative;
     width:70%;
     height: 75vh;
     border-radius: 25px;
@@ -46,7 +47,7 @@
     background-color: rgb(200, 200, 200);
 }
 .detail-img{
-    width:100%;
+    width:50%;
     height: 100%;
     opacity: 0.75;
     border-radius: 25px;
@@ -58,6 +59,7 @@
     text-align: center;
     color: black;
     top: 50%;
+    font-size: 3vw;
     font-weight: 700;
     /* transform: rotate(-20deg); */
 }
@@ -66,6 +68,12 @@
 .detail-serving{
     background-color: black;
     color: white;
+}
+.detail-time, .detail-people, .change-people, .detail-cal{
+    padding: 2vw 1vw;
+    text-align: center;
+    font-size: 1.75vw;
+    font-weight: 500;
 }
 .add-people, .sub-people{
     border-radius: 50%;
@@ -77,7 +85,7 @@
 
 /* CSS: Ingredients */
 .detail-ingre{
-    height: 28vh;
+    max-height: 25vh;
     overflow: auto;
 }
 .ingre-title{
@@ -93,8 +101,14 @@
 .ingredient{
     color:white;
     padding: 10px;
+    text-transform:capitalize;
     margin: auto;
     text-align: center;
+}
+.detail-view{
+    position: absolute;
+    bottom: -20px;
+    left: calc(50% - 18px - 6vw);
 }
 #view-btn{
     padding: 1.5vh 3vw;
@@ -106,4 +120,24 @@
 #view-btn a{
     color: black;
     text-decoration: none;
+}
+
+/* desktop view */
+
+@media screen and (min-width:1400px) {
+    .recipe-page{
+        width: 80% !important;
+    }
+    .recipe-name{
+        font-size: 1vw;
+    }
+    .detail-name{
+        font-size: 2vw;
+    }
+    .detail-time, .detail-people, .change-people{
+        font-size: 1vw;
+    }
+    .ingre-title{
+        font-size: 1.75vw;
+    }
 }
