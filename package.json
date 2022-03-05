@@ -2,9 +2,11 @@
   "name": "foodify",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://harshitguptahg576.github.io/Foodify/",
   "dependencies": {
     "axios": "^0.26.0",
     "bootstrap": "^5.1.3",
+    "gh-pages": "^3.2.3",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "0.9.5"
@@ -14,6 +16,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   }
 }
