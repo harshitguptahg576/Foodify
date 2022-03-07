@@ -28,7 +28,7 @@ const Header = () => {
             <span className='menu-icon px-2'>➕</span>
             <span className='menu-text px-1'>Add Recipe 📝</span>
           </div>
-          <div className='menu p-2 mx-2 favorite'>
+          <div className='menu p-2 mx-2 favorites'>
             <span className='menu-icon px-2'>🖤</span>
             <span className='menu-text px-1'>Favorites ✨</span>
           </div>

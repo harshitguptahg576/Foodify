@@ -2,6 +2,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  transition: 1.5s ease;
+}
+p{
+  margin-bottom: 0px !important;
+}
+p, span{
+  transition: 0s ease !important;
 }
 body{
   background: url("../public/Assets/Images/back.png") no-repeat center right / cover;
