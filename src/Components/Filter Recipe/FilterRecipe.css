@@ -164,3 +164,23 @@
         font-size: 1.25vw;
     }
 }
+
+/* desktop view */
+
+@media screen and (max-width:500px) {
+    .recipe-page{
+        width: 80% !important;
+    }
+    .recipe-name{
+        font-size: 2.5vw;
+    }
+    .detail-time, .detail-people, .change-people{
+        font-size: 3.75vw;
+    }
+    .ingre-title{
+        font-size: 3.25vw;
+    }
+    .ingredient{
+        font-size: 2.5vw;
+    }
+}
