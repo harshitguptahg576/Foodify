@@ -145,9 +145,6 @@
 /* desktop view */
 
 @media screen and (min-width:1400px) {
-    .recipe-page{
-        width: 80% !important;
-    }
     .recipe-name{
         font-size: 1vw;
     }
@@ -167,15 +164,18 @@
 
 /* desktop view */
 
-/* @media screen and (max-width:500px) {
-    .recipe-page{
-        width: 80% !important;
+@media screen and (max-width:500px) {
+    .menu{
+        font-size: 3vw;
     }
     .recipe-name{
         font-size: 2.5vw;
     }
     .detail-time, .detail-people, .change-people{
-        font-size: 3.75vw;
+        font-size: 2.5vw;
+    }
+    .detail-cal{
+        font-size: 2.8vw;
     }
     .ingre-title{
         font-size: 3.25vw;
@@ -183,4 +183,4 @@
     .ingredient{
         font-size: 2.5vw;
     }
-} */
+}
