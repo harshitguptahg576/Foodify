@@ -167,7 +167,7 @@
 
 /* desktop view */
 
-@media screen and (max-width:500px) {
+/* @media screen and (max-width:500px) {
     .recipe-page{
         width: 80% !important;
     }
@@ -183,4 +183,4 @@
     .ingredient{
         font-size: 2.5vw;
     }
-}
+} */
